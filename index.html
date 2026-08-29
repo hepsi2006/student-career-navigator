@@ -1,0 +1,682 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- ===== META & TITLE ===== -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Career Navigator | Hepsiba Alexseelan</title>
+    <meta name="description" content="Career portfolio of Hepsiba Alexseelan, B.Tech Artificial Intelligence and Data Science student and aspiring Python Developer." />
+
+    <!-- ===== BOOTSTRAP 5 (from CDN) ===== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- ===== BOOTSTRAP ICONS ===== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- ===== GOOGLE FONT ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ===== MY CUSTOM CSS ===== -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="80" tabindex="0">
+    <!-- =========================================================
+         NAVBAR  (Bootstrap navbar)
+         ========================================================== -->
+    <nav
+      id="mainNav"
+      class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#home">
+          <i class="bi bi-compass-fill text-warning"></i> Career Navigator
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+          aria-controls="navMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+            <li class="nav-item"><a class="nav-link" href="#readiness">Career Score</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- =========================================================
+         1. HOME / HERO SECTION
+         ========================================================== -->
+    <header id="home" class="hero-section">
+      <div class="container">
+        <div class="row align-items-center min-vh-100">
+          <div class="col-lg-7 text-center text-lg-start hero-text">
+            <p class="hero-greeting mb-2">Hello, I am</p>
+            <h1 class="display-2 fw-bold hero-name">Hepsiba Alexseelan</h1>
+            <h2 class="h3 hero-course">B.Tech — Artificial Intelligence &amp; Data Science</h2>
+            <p class="hero-subtitle">Aspiring Python Developer</p>
+            <p class="hero-intro">
+              A passionate student exploring how data, code, and intelligent
+              systems can solve real-world problems. This space is my personal
+              career navigator — a living portfolio of my skills, projects, and
+              readiness for the tech industry.
+            </p>
+            <a href="#about" class="btn btn-warning btn-lg mt-3 hero-btn">
+              Explore My Profile <i class="bi bi-arrow-down-circle ms-1"></i>
+            </a>
+          </div>
+          <div class="col-lg-5 d-none d-lg-block text-center hero-visual">
+            <div class="hero-ring">
+              <i class="bi bi-cpu-fill"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- =========================================================
+         2. ABOUT ME
+         ========================================================== -->
+    <section id="about" class="section-padding bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <p class="text-uppercase text-warning fw-semibold mb-1">Get to know me</p>
+          <h2 class="section-title">About Me</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-5 text-center">
+            <div class="about-photo">
+              <i class="bi bi-person-circle"></i>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <p class="about-text">
+              I'm a B.Tech student specializing in Artificial Intelligence and
+              Data Science. I enjoy turning ideas into working software and
+              finding patterns hidden inside data. My goal is to become a
+              skilled Python developer who can build tools that are useful,
+              clean, and meaningful.
+            </p>
+            <p class="about-text">
+              I believe in learning by building — every project on this site is
+              a step forward in my journey. When I'm not studying, I experiment
+              with small scripts, explore datasets, and keep improving my
+              problem-solving skills.
+            </p>
+
+            <h4 class="h5 mt-4 fw-semibold">My Interests</h4>
+            <div class="interest-tags">
+              <span class="interest-tag"><i class="bi bi-filetype-py"></i> Python</span>
+              <span class="interest-tag"><i class="bi bi-code-slash"></i> Web Development</span>
+              <span class="interest-tag"><i class="bi bi-graph-up-arrow"></i> Data Science</span>
+              <span class="interest-tag"><i class="bi bi-robot"></i> Artificial Intelligence</span>
+              <span class="interest-tag"><i class="bi bi-database"></i> SQL</span>
+              <span class="interest-tag"><i class="bi bi-file-earmark-spreadsheet"></i> Excel</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         3. EDUCATION  (timeline design)
+         ========================================================== -->
+    <section id="education" class="section-padding">
+      <div class="container">
+        <div class="text-center mb-5">
+          <p class="text-uppercase text-warning fw-semibold mb-1">My journey</p>
+          <h2 class="section-title">Education</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="timeline">
+          <!-- Timeline item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"><i class="bi bi-mortarboard-fill"></i></div>
+            <div class="timeline-content card">
+              <div class="card-body">
+                <span class="badge bg-warning text-dark mb-2">Current</span>
+                <h3 class="h5 card-title">B.Tech — Artificial Intelligence &amp; Data Science</h3>
+                <p class="text-muted mb-1">College Student</p>
+                <p class="card-text">
+                  Currently pursuing my undergraduate degree with a focus on
+                  machine learning, data analytics, and software development.
+                  Active in coding practice and hands-on academic projects.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"><i class="bi bi-journal-bookmark-fill"></i></div>
+            <div class="timeline-content card">
+              <div class="card-body">
+                <span class="badge bg-secondary mb-2">Completed</span>
+                <h3 class="h5 card-title">Higher Secondary (Science Stream)</h3>
+                <p class="text-muted mb-1">Pre-University Studies</p>
+                <p class="card-text">
+                  Built a foundation in mathematics and computer science that
+                  prepared me for engineering studies.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"><i class="bi bi-pencil-fill"></i></div>
+            <div class="timeline-content card">
+              <div class="card-body">
+                <span class="badge bg-secondary mb-2">Completed</span>
+                <h3 class="h5 card-title">Secondary School</h3>
+                <p class="text-muted mb-1">Foundation Studies</p>
+                <p class="card-text">
+                  Developed an early interest in computers and logical
+                  problem-solving.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         4. SKILLS  (animated progress bars)
+         ========================================================== -->
+    <section id="skills" class="section-padding bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <p class="text-uppercase text-warning fw-semibold mb-1">What I know</p>
+          <h2 class="section-title">Technical Skills</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="row g-4">
+          <!-- Skill card template. data-skill holds the percentage. -->
+          <div class="col-6 col-md-3">
+            <div class="skill-card card h-100 text-center">
+              <div class="card-body">
+                <i class="bi bi-filetype-py skill-icon"></i>
+                <h3 class="h6">Python</h3>
+                <div class="progress" role="progressbar">
+                  <div class="progress-bar" data-skill="85"></div>
+                </div>
+                <span class="skill-percent">85%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div class="skill-card card h-100 text-center">
+              <div class="card-body">
+                <i class="bi bi-cup-hot-fill skill-icon"></i>
+                <h3 class="h6">Java</h3>
+                <div class="progress" role="progressbar">
+                  <div class="progress-bar" data-skill="70"></div>
+                </div>
+                <span class="skill-percent">70%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div class="skill-card card h-100 text-center">
+              <div class="card-body">
+                <i class="bi bi-filetype-html skill-icon"></i>
+                <h3 class="h6">HTML</h3>
+                <div class="progress" role="progressbar">
+                  <div class="progress-bar" data-skill="90"></div>
+                </div>
+                <span class="skill-percent">90%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div class="skill-card card h-100 text-center">
+              <div class="card-body">
+                <i class="bi bi-filetype-css skill-icon"></i>
+                <h3 class="h6">CSS</h3>
+                <div class="progress" role="progressbar">
+                  <div class="progress-bar" data-skill="85"></div>
+                </div>
+                <span class="skill-percent">85%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div class="skill-card card h-100 text-center">
+              <div class="card-body">
+                <i class="bi bi-filetype-js skill-icon"></i>
+                <h3 class="h6">JavaScript</h3>
+                <div class="progress" role="progressbar">
+                  <div class="progress-bar" data-skill="80"></div>
+                </div>
+                <span class="skill-percent">80%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div class="skill-card card h-100 text-center">
+              <div class="card-body">
+                <i class="bi bi-bootstrap-fill skill-icon"></i>
+                <h3 class="h6">Bootstrap</h3>
+                <div class="progress" role="progressbar">
+                  <div class="progress-bar" data-skill="88"></div>
+                </div>
+                <span class="skill-percent">88%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div class="skill-card card h-100 text-center">
+              <div class="card-body">
+                <i class="bi bi-database-fill skill-icon"></i>
+                <h3 class="h6">SQL</h3>
+                <div class="progress" role="progressbar">
+                  <div class="progress-bar" data-skill="75"></div>
+                </div>
+                <span class="skill-percent">75%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div class="skill-card card h-100 text-center">
+              <div class="card-body">
+                <i class="bi bi-file-earmark-spreadsheet-fill skill-icon"></i>
+                <h3 class="h6">Excel</h3>
+                <div class="progress" role="progressbar">
+                  <div class="progress-bar" data-skill="82"></div>
+                </div>
+                <span class="skill-percent">82%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         5. PROJECTS
+         ========================================================== -->
+    <section id="projects" class="section-padding">
+      <div class="container">
+        <div class="text-center mb-5">
+          <p class="text-uppercase text-warning fw-semibold mb-1">Things I've built</p>
+          <h2 class="section-title">Projects</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="row g-4">
+          <!-- Project 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card project-card h-100">
+              <div class="project-icon-box">
+                <i class="bi bi-compass"></i>
+              </div>
+              <div class="card-body">
+                <h3 class="h5 card-title">Student Career Navigator</h3>
+                <p class="card-text">
+                  A responsive career portfolio website built with HTML, CSS,
+                  Bootstrap and JavaScript. Includes an interactive career
+                  readiness score calculator and a validated contact form.
+                </p>
+                <div class="project-tech">
+                  <span>HTML</span><span>CSS</span><span>Bootstrap</span><span>JavaScript</span>
+                </div>
+                <a href="#" class="btn btn-outline-dark mt-3" onclick="return false;">
+                  View Project <i class="bi bi-box-arrow-up-right ms-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card project-card h-100">
+              <div class="project-icon-box">
+                <i class="bi bi-graph-down-arrow"></i>
+              </div>
+              <div class="card-body">
+                <h3 class="h5 card-title">Customer Churn Prediction</h3>
+                <p class="card-text">
+                  A machine learning project that predicts whether a customer
+                  is likely to leave a service, using classification models
+                  trained on customer behavior data.
+                </p>
+                <div class="project-tech">
+                  <span>Python</span><span>Pandas</span><span>Scikit-learn</span>
+                </div>
+                <a href="#" class="btn btn-outline-dark mt-3" onclick="return false;">
+                  View Project <i class="bi bi-box-arrow-up-right ms-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card project-card h-100">
+              <div class="project-icon-box">
+                <i class="bi bi-bar-chart-line-fill"></i>
+              </div>
+              <div class="card-body">
+                <h3 class="h5 card-title">Data Analysis Dashboard</h3>
+                <p class="card-text">
+                  An interactive dashboard that visualizes datasets with charts
+                  and summaries, making it easier to understand trends and
+                  insights at a glance.
+                </p>
+                <div class="project-tech">
+                  <span>Python</span><span>Excel</span><span>Data Viz</span>
+                </div>
+                <a href="#" class="btn btn-outline-dark mt-3" onclick="return false;">
+                  View Project <i class="bi bi-box-arrow-up-right ms-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         6. CERTIFICATIONS
+         ========================================================== -->
+    <section id="certifications" class="section-padding bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <p class="text-uppercase text-warning fw-semibold mb-1">My achievements</p>
+          <h2 class="section-title">Certifications</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="row g-4">
+          <!-- Edit these names easily here -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card cert-card h-100">
+              <div class="card-body text-center">
+                <i class="bi bi-patch-check-fill cert-icon"></i>
+                <h3 class="h5">Python for Data Science</h3>
+                <p class="text-muted">Online Certification Platform</p>
+                <span class="badge bg-success">Completed</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card cert-card h-100">
+              <div class="card-body text-center">
+                <i class="bi bi-patch-check-fill cert-icon"></i>
+                <h3 class="h5">Machine Learning Basics</h3>
+                <p class="text-muted">Online Certification Platform</p>
+                <span class="badge bg-success">Completed</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card cert-card h-100">
+              <div class="card-body text-center">
+                <i class="bi bi-patch-check-fill cert-icon"></i>
+                <h3 class="h5">Web Development with JavaScript</h3>
+                <p class="text-muted">Online Certification Platform</p>
+                <span class="badge bg-success">Completed</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card cert-card h-100">
+              <div class="card-body text-center">
+                <i class="bi bi-patch-check-fill cert-icon"></i>
+                <h3 class="h5">SQL &amp; Database Fundamentals</h3>
+                <p class="text-muted">Online Certification Platform</p>
+                <span class="badge bg-success">Completed</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card cert-card h-100">
+              <div class="card-body text-center">
+                <i class="bi bi-patch-check-fill cert-icon"></i>
+                <h3 class="h5">Excel for Data Analysis</h3>
+                <p class="text-muted">Online Certification Platform</p>
+                <span class="badge bg-success">Completed</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card cert-card h-100">
+              <div class="card-body text-center">
+                <i class="bi bi-patch-check-fill cert-icon"></i>
+                <h3 class="h5">AI &amp; Deep Learning Intro</h3>
+                <p class="text-muted">Online Certification Platform</p>
+                <span class="badge bg-success">Completed</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         7. CAREER READINESS  (UNIQUE FEATURE)
+         ========================================================== -->
+    <section id="readiness" class="section-padding">
+      <div class="container">
+        <div class="text-center mb-5">
+          <p class="text-uppercase text-warning fw-semibold mb-1">Unique feature</p>
+          <h2 class="section-title">Career Readiness Score</h2>
+          <div class="section-divider"></div>
+          <p class="text-muted max-w-700 mx-auto mt-3">
+            Rate yourself in each category from 1 to 10. Then click the button
+            to calculate your overall career readiness — updated live with
+            JavaScript.
+          </p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          <!-- Sliders. Each input has id used by script.js -->
+          <div class="col-lg-6">
+            <div class="card readiness-card">
+              <div class="card-body">
+
+                <div class="readiness-item">
+                  <label for="scoreTech" class="form-label d-flex justify-content-between">
+                    <span><i class="bi bi-tools"></i> Technical Skills</span>
+                    <span class="fw-bold" id="valTech">7</span>
+                  </label>
+                  <input type="range" class="form-range readiness-range" min="1" max="10" value="7" id="scoreTech" />
+                </div>
+
+                <div class="readiness-item">
+                  <label for="scoreComm" class="form-label d-flex justify-content-between">
+                    <span><i class="bi bi-chat-dots"></i> Communication</span>
+                    <span class="fw-bold" id="valComm">6</span>
+                  </label>
+                  <input type="range" class="form-range readiness-range" min="1" max="10" value="6" id="scoreComm" />
+                </div>
+
+                <div class="readiness-item">
+                  <label for="scoreProblem" class="form-label d-flex justify-content-between">
+                    <span><i class="bi bi-puzzle"></i> Problem Solving</span>
+                    <span class="fw-bold" id="valProblem">7</span>
+                  </label>
+                  <input type="range" class="form-range readiness-range" min="1" max="10" value="7" id="scoreProblem" />
+                </div>
+
+                <div class="readiness-item">
+                  <label for="scoreProjects" class="form-label d-flex justify-content-between">
+                    <span><i class="bi bi-folder2-open"></i> Projects</span>
+                    <span class="fw-bold" id="valProjects">6</span>
+                  </label>
+                  <input type="range" class="form-range readiness-range" min="1" max="10" value="6" id="scoreProjects" />
+                </div>
+
+                <div class="readiness-item">
+                  <label for="scoreCerts" class="form-label d-flex justify-content-between">
+                    <span><i class="bi bi-patch-check"></i> Certifications</span>
+                    <span class="fw-bold" id="valCerts">6</span>
+                  </label>
+                  <input type="range" class="form-range readiness-range" min="1" max="10" value="6" id="scoreCerts" />
+                </div>
+
+                <button class="btn btn-warning btn-lg w-100 mt-3" id="calcBtn">
+                  <i class="bi bi-calculator-fill me-1"></i> Calculate My Career Score
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Result display -->
+          <div class="col-lg-6">
+            <div class="card readiness-result-card h-100">
+              <div class="card-body text-center d-flex flex-column justify-content-center">
+                <div class="score-ring" id="scoreRing">
+                  <span id="scoreNumber">--</span>
+                  <small>%</small>
+                </div>
+                <h3 class="h5 mt-4" id="scoreLabel">Your score will appear here</h3>
+                <p class="text-muted" id="scoreMessage">
+                  Move the sliders above and click the button to see your
+                  personalized career readiness message.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         8. CONTACT
+         ========================================================== -->
+    <section id="contact" class="section-padding bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <p class="text-uppercase text-warning fw-semibold mb-1">Get in touch</p>
+          <h2 class="section-title">Contact Me</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-7">
+            <div class="card">
+              <div class="card-body p-4">
+                <!-- novalidate so we do our own JS validation -->
+                <form id="contactForm" novalidate>
+                  <div class="mb-3">
+                    <label for="cName" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="cName" placeholder="Your full name" />
+                    <div class="invalid-feedback">Please enter your name.</div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="cEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="cEmail" placeholder="you@example.com" />
+                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="cSubject" class="form-label">Subject</label>
+                    <input type="text" class="form-control" id="cSubject" placeholder="Subject of your message" />
+                    <div class="invalid-feedback">Please enter a subject.</div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="cMessage" class="form-label">Message</label>
+                    <textarea class="form-control" id="cMessage" rows="4" placeholder="Write your message here..."></textarea>
+                    <div class="invalid-feedback">Please write a message.</div>
+                  </div>
+
+                  <button type="submit" class="btn btn-dark btn-lg w-100">
+                    <i class="bi bi-send-fill me-1"></i> Submit
+                  </button>
+
+                  <!-- success message (hidden until JS shows it) -->
+                  <div class="alert alert-success mt-3 d-none" id="formSuccess" role="alert">
+                    <i class="bi bi-check-circle-fill me-1"></i>
+                    Thank you! Your message has been sent successfully.
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         9. FOOTER
+         ========================================================== -->
+    <footer class="footer-section text-white">
+      <div class="container">
+        <div class="row align-items-center g-3">
+          <div class="col-md-4 text-center text-md-start">
+            <h3 class="h5 mb-1"><i class="bi bi-compass-fill text-warning"></i> Career Navigator</h3>
+            <p class="mb-0">Hepsiba Alexseelan</p>
+          </div>
+
+          <div class="col-md-4 text-center footer-social">
+            <a href="https://github.com/" target="_blank" rel="noopener" class="footer-link" aria-label="GitHub">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener" class="footer-link" aria-label="LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="mailto:hepsiba.alexseelan@example.com" class="footer-link" aria-label="Email">
+              <i class="bi bi-envelope-fill"></i>
+            </a>
+          </div>
+
+          <div class="col-md-4 text-center text-md-end">
+            <p class="mb-0">&copy; 2026 Hepsiba Alexseelan. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ===== BOOTSTRAP JS BUNDLE (for navbar toggle etc.) ===== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- ===== MY CUSTOM JAVASCRIPT ===== -->
+    <script src="script.js"></script>
+  </body>
+</html>

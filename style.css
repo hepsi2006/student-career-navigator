@@ -1,0 +1,613 @@
+/* =========================================================
+   Student Career Navigator - Custom Stylesheet
+   Author: Hepsiba Alexseelan
+   Stack: HTML5 + CSS3 + Bootstrap 5 + Vanilla JavaScript
+   ========================================================= */
+
+/* ----- 1. ROOT / GLOBAL VARIABLES ----- */
+:root {
+  /* Color system */
+  --primary: #1a1a2e;        /* deep navy */
+  --primary-2: #16213e;      /* lighter navy */
+  --accent: #f59e0b;         /* warm amber/gold */
+  --accent-soft: #fbbf24;
+  --text-dark: #1f2937;
+  --text-muted: #6b7280;
+  --bg-light: #f8fafc;
+  --white: #ffffff;
+  --success: #16a34a;
+  --warning: #f59e0b;
+  --error: #dc2626;
+
+  /* Spacing & radius */
+  --radius: 14px;
+  --shadow-sm: 0 4px 14px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 18px 40px rgba(0, 0, 0, 0.15);
+
+  /* Font */
+  --font-body: "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+/* ----- 2. BASE BODY ----- */
+body {
+  font-family: var(--font-body);
+  color: var(--text-dark);
+  background-color: var(--white);
+  overflow-x: hidden;
+}
+
+/* Smooth scrolling for the whole page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Generic section spacing */
+.section-padding {
+  padding: 90px 0;
+}
+
+/* Maximum width helper for paragraph text */
+.max-w-700 {
+  max-width: 700px;
+}
+
+/* ----- 3. SECTION TITLES ----- */
+.section-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0;
+}
+
+.section-divider {
+  width: 70px;
+  height: 4px;
+  background: var(--accent);
+  margin: 12px auto 0;
+  border-radius: 4px;
+}
+
+/* ----- 4. NAVBAR ----- */
+.custom-navbar {
+  background-color: transparent;
+  transition: background-color 0.35s ease, box-shadow 0.35s ease;
+  padding: 14px 0;
+}
+
+/* Navbar gets a solid background once the user scrolls down */
+.custom-navbar.scrolled {
+  background-color: var(--primary);
+  box-shadow: var(--shadow-sm);
+}
+
+.custom-navbar .navbar-brand {
+  font-size: 1.3rem;
+  letter-spacing: 0.3px;
+}
+
+.custom-navbar .nav-link {
+  color: rgba(255, 255, 255, 0.85) !important;
+  font-weight: 500;
+  margin: 0 4px;
+  position: relative;
+  transition: color 0.25s ease;
+}
+
+/* Animated underline on hover */
+.custom-navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  bottom: 2px;
+  width: 0;
+  height: 2px;
+  background: var(--accent);
+  transition: width 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover::after,
+.custom-navbar .nav-link.active::after {
+  width: calc(100% - 16px);
+}
+
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link.active {
+  color: var(--accent) !important;
+}
+
+/* ----- 5. HERO SECTION ----- */
+.hero-section {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-2) 100%);
+  color: var(--white);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Decorative blurred circles in the hero background */
+.hero-section::before,
+.hero-section::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(245, 158, 11, 0.18);
+  filter: blur(40px);
+}
+
+.hero-section::before {
+  width: 320px;
+  height: 320px;
+  top: -80px;
+  right: -60px;
+}
+
+.hero-section::after {
+  width: 260px;
+  height: 260px;
+  bottom: -90px;
+  left: -70px;
+  background: rgba(99, 102, 241, 0.18);
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-greeting {
+  color: var(--accent);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.hero-name {
+  background: linear-gradient(90deg, #fff, #fbbf24);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.5rem;
+}
+
+.hero-course {
+  color: rgba(255, 255, 255, 0.92);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.hero-subtitle {
+  color: var(--accent);
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.hero-intro {
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 540px;
+  font-size: 1.05rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+  .hero-intro {
+    margin: 0;
+  }
+}
+
+.hero-btn {
+  font-weight: 600;
+  border-radius: 50px;
+  padding: 12px 30px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.hero-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(245, 158, 11, 0.4);
+}
+
+/* Decorative ring with icon on the right of hero */
+.hero-visual {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-ring {
+  width: 280px;
+  height: 280px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 3px dashed rgba(245, 158, 11, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: spin 24s linear infinite;
+}
+
+.hero-ring i {
+  font-size: 6rem;
+  color: var(--accent);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ----- 6. ABOUT ME ----- */
+.about-photo {
+  width: 260px;
+  height: 260px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), var(--primary-2));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-lg);
+  border: 6px solid var(--white);
+}
+
+.about-photo i {
+  font-size: 8rem;
+  color: var(--accent);
+}
+
+.about-text {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text-muted);
+}
+
+/* Interest tags */
+.interest-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.interest-tag {
+  background: var(--white);
+  border: 1px solid #e5e7eb;
+  border-radius: 50px;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--primary);
+  transition: all 0.25s ease;
+  box-shadow: var(--shadow-sm);
+}
+
+.interest-tag i {
+  color: var(--accent);
+  margin-right: 4px;
+}
+
+.interest-tag:hover {
+  transform: translateY(-3px);
+  background: var(--primary);
+  color: var(--white);
+}
+
+.interest-tag:hover i {
+  color: var(--accent-soft);
+}
+
+/* ----- 7. EDUCATION TIMELINE ----- */
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* The vertical line */
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 24px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(var(--accent), var(--primary));
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 70px;
+  margin-bottom: 30px;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  box-shadow: 0 0 0 4px var(--white);
+}
+
+.timeline-content {
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  border: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.timeline-content:hover {
+  transform: translateX(8px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* ----- 8. SKILLS ----- */
+.skill-card {
+  border: none;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+.skill-icon {
+  font-size: 2.4rem;
+  color: var(--primary);
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.skill-card:hover .skill-icon {
+  color: var(--accent);
+}
+
+.skill-card .progress {
+  height: 8px;
+  border-radius: 50px;
+  background: #e5e7eb;
+  margin-top: 8px;
+}
+
+.skill-card .progress-bar {
+  background: linear-gradient(90deg, var(--accent), var(--accent-soft));
+  width: 0; /* animated to data-skill value by JS */
+  transition: width 1.2s ease;
+}
+
+.skill-percent {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+/* ----- 9. PROJECTS ----- */
+.project-card {
+  border: none;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+.project-icon-box {
+  height: 140px;
+  background: linear-gradient(135deg, var(--primary), var(--primary-2));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-icon-box i {
+  font-size: 3.5rem;
+  color: var(--accent);
+}
+
+.project-tech {
+  margin-top: 10px;
+}
+
+.project-tech span {
+  display: inline-block;
+  background: #eef2ff;
+  color: var(--primary);
+  font-size: 0.78rem;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 50px;
+  margin: 3px 3px 0 0;
+}
+
+/* ----- 10. CERTIFICATIONS ----- */
+.cert-card {
+  border: none;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: var(--shadow-lg);
+}
+
+.cert-icon {
+  font-size: 2.8rem;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+/* ----- 11. CAREER READINESS ----- */
+.readiness-card {
+  border: none;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+}
+
+.readiness-item {
+  margin-bottom: 18px;
+}
+
+.readiness-item .form-label {
+  font-weight: 500;
+  color: var(--primary);
+}
+
+.readiness-item i {
+  color: var(--accent);
+  margin-right: 4px;
+}
+
+/* Style the range slider track */
+.readiness-range::-webkit-slider-thumb {
+  background: var(--accent);
+}
+
+.readiness-range::-moz-range-thumb {
+  background: var(--accent);
+}
+
+.readiness-result-card {
+  border: none;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  background: linear-gradient(135deg, var(--primary), var(--primary-2));
+  color: var(--white);
+  min-height: 100%;
+}
+
+/* Circular score ring */
+.score-ring {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: conic-gradient(var(--accent) 0deg, rgba(255,255,255,0.1) 0deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: background 0.8s ease;
+}
+
+.score-ring::before {
+  content: "";
+  position: absolute;
+  inset: 12px;
+  border-radius: 50%;
+  background: var(--primary-2);
+}
+
+.score-ring span,
+.score-ring small {
+  position: relative;
+  z-index: 1;
+}
+
+.score-ring span {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.score-ring small {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+}
+
+#scoreLabel {
+  color: var(--white);
+}
+
+/* ----- 12. CONTACT FORM ----- */
+#contactForm .form-control:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 0.2rem rgba(245, 158, 11, 0.25);
+}
+
+/* ----- 13. FOOTER ----- */
+.footer-section {
+  background-color: var(--primary);
+  padding: 30px 0;
+}
+
+.footer-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--white);
+  font-size: 1.2rem;
+  margin: 0 6px;
+  transition: all 0.3s ease;
+}
+
+.footer-link:hover {
+  background: var(--accent);
+  color: var(--primary);
+  transform: translateY(-4px);
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ----- 14. RESPONSIVE TWEAKS ----- */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.9rem;
+  }
+
+  .hero-name {
+    font-size: 2.6rem;
+  }
+
+  .section-padding {
+    padding: 60px 0;
+  }
+
+  .score-ring {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* ----- 15. SIMPLE REVEAL-ON-SCROLL ANIMATION ----- */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
